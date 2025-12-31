@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ./publish
+          path: ${{env.DOTNET_ROOT}}/myapp
 
   deploy:
     runs-on: ubuntu-latest
@@ -47,7 +47,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
            name: api-publish
-           path: ./publish
+          
 
       
       - name: Login to Azure
@@ -62,8 +62,9 @@ jobs:
         with:
           app-name: 'riva-smartinbox-api'
           slot-name: 'Production'
-          package: ./publish
+          package: .
 
           
+
 
 
