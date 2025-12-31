@@ -21,7 +21,7 @@ public class InboxController : ControllerBase
         _scoringService = scoringService;
         _logger = logger;
     }
-
+    
     [HttpPost("sort")]
     public IActionResult SortEmails([FromBody] List<Email> emails)
     {
@@ -49,7 +49,7 @@ public class InboxController : ControllerBase
         _logger.LogInformation("Returning {Count} sorted emails", emails.Count);
         return Ok(scoredemails);
 
-
+        //////////test////
         throw new NotImplementedException("Sort endpoint not yet implemented");
     }
 }
