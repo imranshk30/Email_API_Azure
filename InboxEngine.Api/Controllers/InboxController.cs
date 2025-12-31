@@ -50,7 +50,7 @@ public class InboxController : ControllerBase
         return Ok(scoredemails);
 
         //////////testing purpose//////////
-        ///////////make sure ci/cd works////////
+        //deleted
         throw new NotImplementedException("Sort endpoint not yet implemented");
     }
 }
