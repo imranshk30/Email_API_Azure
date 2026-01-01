@@ -48,7 +48,7 @@ public class InboxController : ControllerBase
         }).OrderByDescending(e => e.PriorityScore).ToList();
         _logger.LogInformation("Returning {Count} sorted emails", emails.Count);
         return Ok(scoredemails);
-        //test 6
+        //test 7
        // throw new NotImplementedException("Sort endpoint not yet implemented");
     }
 }
