@@ -45,7 +45,6 @@ public class InboxController : ControllerBase
         _logger.LogInformation("Returning {Count} sorted emails", emails.Count);
         return Ok(scoredemails);
 
-//changes in featured branch
-       // throw new NotImplementedException("Sort endpoint not yet implemented");
+
     }
 }
