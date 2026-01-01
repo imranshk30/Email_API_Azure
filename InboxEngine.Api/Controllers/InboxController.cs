@@ -49,7 +49,7 @@ public class InboxController : ControllerBase
         _logger.LogInformation("Returning {Count} sorted emails", emails.Count);
         return Ok(scoredemails);
 
-       
+       //featured part 2
        // throw new NotImplementedException("Sort endpoint not yet implemented");
     }
 }
