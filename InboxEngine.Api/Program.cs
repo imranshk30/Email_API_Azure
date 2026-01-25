@@ -12,6 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IPriorityScoringService, PriorityScoringService>();
+builder.Services.AddApplicationInsightsTelemetry();
 
 builder.Services.AddCors(options =>
 {
